@@ -40,7 +40,7 @@ async def Loggin(client,message):
                 Proxy)
             if status_r:
                 status_t, response_dv = step_three.scarp_tg_existing_app(cookie_v,Proxy)
-                name = f'DARK {randint(1,8500)}'
+                name = f'ᴀᴇʀᴏɴ {randint(1,8500)}'
                 if not status_t:
                     await sleep(5)
                     step_four.create_new_tg_app(
@@ -124,15 +124,15 @@ async def SpamBot(app,user):
         await sleep(3)
         async for message in app.get_chat_history("SpamBot"):
             text=message.text
-            if re.search(r"^Good news", text) or re.search(r"^مژده", text):
+            if re.search(r"^Gᴏᴏᴅ ɴᴇᴡs", text) or re.search(r"ᴋᴀʙᴀʀ ʏᴀɴɢ ʙᴀɪᴋ", text):
                 report=['Free' ,  None ]
             elif re.search(r"Unfortunately", text):
                 report=['ForEver' ,  None ]
             elif re.search(r"until(.*)\.", text):
                 reep=re.findall(r"limited until(.*)\.", text)
                 report= ['temporary' , reep[0]]
-            elif re.search(r"محدودیت دفعه بعد طولانی‌تر", text):
-                reep=text.split('محدودیت حساب کاربری شما به صورت اتوماتیک در')[-1].split('برداشته خواهد شد')[0]
+            elif re.search(r"ᴅɪᴍᴇɴsɪ ʟᴇʙɪʜ ᴘᴀɴᴊᴀɴɢ", text):
+                reep=text.split('ᴀᴋᴜɴ ʟᴜ ᴅɪʙᴀᴛᴀsɪ sᴀᴍᴘᴀɪ')[-1].split('ɪɴɪ ᴀᴋᴀɴ ᴅɪʜᴀᴘᴜs')[0]
                 report= ['temporary' , reep[0]]
             elif 'until' in str(text):
                 report=str(text).split('until')[1].split('.')[0]
@@ -153,7 +153,7 @@ async def SpamBot(app,user):
 #---------------------------------------------------------------------------------| LOGGIN |---------------------------------------------------------------------------------#
 
 
-@Advertising.on_message(RJ.prv & RJ.regex('^ثبت اکانت 📥') , group=0)
+@Advertising.on_message(RJ.prv & RJ.regex('^ᴀᴋᴜɴ 📥') , group=0)
 @RJ.User_Details
 @RJ.Coin_Limit
 async def Add_Account(bot,message,user):
