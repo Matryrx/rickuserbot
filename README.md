@@ -2,4 +2,4 @@
 -
 [![GitHub forks](https://img.shields.io/github/forks/amiralirj/DarkAdvertizer.svg?style=social&label=Fork&maxAge=2592000)](https://GitHub.com/amiralirj/DarkAdvertizer/network/)
 
-lu jelek bego
+lu jelek bego 
